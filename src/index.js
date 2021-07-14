@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from "./App";
 
-const [] = ["boots", "tent", "headlamp"]; //Destructing an arrays of objects
-console.log(checklist[1]);
+const [, , light ] = ["boots", "tent", "headlamp"]; //Destructing an arrays of objects
+console.log(light);
 
 ReactDOM.render(
 <App authorized={true}/>,

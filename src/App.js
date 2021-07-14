@@ -9,10 +9,10 @@ function RegularComponent() {
   return <h1>General Public information</h1>;
 }
 
-function App(props) {
+function App({authorized}) {
     return (
     <>
-    {props.authorized ? <SecretComponent /> : <RegularComponent />  }
+    {authorized ? <SecretComponent /> : <RegularComponent />  }
     </>
     );
   }
