@@ -1,24 +1,48 @@
 import React, {useState, useEffect, useReducer} from 'react';
 import "./App.css";
 
+// https://api.github.com/users/mmilton 
+// will use link to simulate fetching a JSON object data with a HOOK
+
+
 function App() {
-  const [checked, toggle] = useReducer(
-    (checked) => !checked,
-    false
+  const [data, setData ] = useState(null); // use null: currently no data is passing
+
+  return (
+    <div>
+
+    </div>
   );
+}
+
+export default App;
+
+
+
+
+
+
+ 
+
+
+// function App() {
+//   const [checked, toggle] = useReducer(
+//     (checked) => !checked,
+//     false
+//   );
 
   
-  return (
-    <>
-      <input type="checkbox"
-       value={checked}  
-      onChange={toggle}
-      />
-      <p>{checked ? "checked" : "not checked"}</p>
-    </>
-  ); 
-}
-export default App;
+//   return (
+//     <>
+//       <input type="checkbox"
+//        value={checked}  
+//       onChange={toggle}
+//       />
+//       <p>{checked ? "checked" : "not checked"}</p>
+//     </>
+//   ); 
+// }
+// export default App;
 
 
 // Using reducer to take a current state and return a new state.
