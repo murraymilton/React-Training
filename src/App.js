@@ -8,6 +8,9 @@ import "./App.css";
 function App() {
   const [data, setData ] = useState(null); // use null: currently no data is passing
 
+  useEffect(() => {
+    fetch()
+  })
   return (
     <div>
 
